@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.gramzin.androidquiz.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_questionFragment"
+            app:destination="@id/questionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="com.gramzin.androidquiz.QuestionFragment"
+        android:label="fragment_question"
+        tools:layout="@layout/fragment_question" >
+        <action
+            android:id="@+id/action_questionFragment_to_lossFragment"
+            app:destination="@id/lossFragment" />
+        <action
+            android:id="@+id/action_questionFragment_to_winFragment"
+            app:destination="@id/winFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/winFragment"
+        android:name="com.gramzin.androidquiz.WinFragment"
+        android:label="fragment_win"
+        tools:layout="@layout/fragment_win" />
+    <fragment
+        android:id="@+id/lossFragment"
+        android:name="com.gramzin.androidquiz.LossFragment"
+        android:label="fragment_loss"
+        tools:layout="@layout/fragment_loss" />
+</navigation>
