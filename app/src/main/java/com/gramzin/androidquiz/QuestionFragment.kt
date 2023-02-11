@@ -28,7 +28,7 @@ class QuestionFragment : Fragment() {
 
     var listener = OnClickListener{
         if (!checkAnswer()){
-            findNavController().navigate(R.id.lossFragment)
+            findNavController().navigate(R.id.action_questionFragment_to_lossFragment)
             return@OnClickListener
         }
         viewModel.currentQuestion++

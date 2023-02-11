@@ -21,10 +21,22 @@
         tools:layout="@layout/fragment_question" >
         <action
             android:id="@+id/action_questionFragment_to_lossFragment"
-            app:destination="@id/lossFragment" />
+            app:destination="@id/lossFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="false" />
         <action
             android:id="@+id/action_questionFragment_to_winFragment"
-            app:destination="@id/winFragment" />
+            app:destination="@id/winFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="false" />
     </fragment>
     <fragment
         android:id="@+id/winFragment"
