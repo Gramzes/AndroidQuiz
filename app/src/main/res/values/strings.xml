@@ -4,4 +4,6 @@
     <string name="next">Next</string>
     <string name="win">You answered all the questions correctly</string>
     <string name="lose">You answered the question incorrectly</string>
+    <string name="rules_title">Rules</string>
+    <string name="rules">Данный тест предназначен для проверки ваших знаний в области android-разработки. Игра будет завершена при выборе неправильного варианта ответа.</string>
 </resources>

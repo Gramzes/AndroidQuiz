@@ -48,4 +48,9 @@
         android:name="com.gramzin.androidquiz.LossFragment"
         android:label="fragment_loss"
         tools:layout="@layout/fragment_loss" />
+    <fragment
+        android:id="@+id/rulesFragment"
+        android:name="com.gramzin.androidquiz.RulesFragment"
+        android:label="fragment_rules"
+        tools:layout="@layout/fragment_rules" />
 </navigation>
